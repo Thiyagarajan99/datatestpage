@@ -1,0 +1,185 @@
+@media screen and (max-width: 481px){
+    #main, #subnav{
+        float: left;
+        padding: 0;
+        width: 94%;
+        margin: 33%;
+    }
+}
+
+
+import url(https://fonts.googleapis.com/css?family=Sofia");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+fieldset{
+border: 1px solid #ff3300;
+  width: 400px;
+  margin:auto;
+}
+body{
+    background: #ffebe6;
+}
+
+.button,.dialogbox,{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons button,{
+    font-size: 25px;
+    font-weight: 500;
+    color: #ff3300;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.dialogbox{
+    width: 550px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.dialogbox header{
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0 30px;
+    background: #ff0000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+
+.dialogbox header .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dialogbox header .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    height: 45px;
+    background: #ff8080;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+.dialogbox header .timer .time_text{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+
+.dialogbox header .timer .time_sec{
+   font-weight: 500;
+   font-size: 18px;
+   width: 50px;
+    height: 45px;
+    background: #990000;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #990000;
+    user-select: none;
+    
+}
+
+.dialogbox section{
+    padding: 25px 30px 20px 30px;
+    background: #ffe6e6;
+}
+
+.dialogbox section .question{
+   font-size: 25px;
+   font-weight: 600;
+}
+
+.dialogbox section .options{
+    padding: 20px 0;
+    display: block;
+}
+
+.dialogbox section .options .option{
+    background:  #ff6666;
+    border: 1px solid #b30000;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dialogbox section .options .option:hover{
+    color:red;
+    background: #cce5ff;
+    border-color: #b8daff;
+    }
+
+.dialogbox section .options .option:last-child{
+    margin-bottom: 0px;
+}
+
+.dialogbox section .options .option .icon{
+    height: 22px;
+    width: 22px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.dialogbox section .options .option  .icon.tick{
+    color: #33cc33;
+    border-color: #248f24;
+    background: #d4edda;
+    
+}
+
+.dialogbox section .options .option .icon.cross{
+    color: #a42834;
+    background: #f8d7da;
+    border-color: #a42834;
+}
+
+.totalqstn{
+   position: relative;
+    background:  #ff6666;
+    border: 1px solid #b30000;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nextbtn,.prvbtn{
+    position: relative;
+    background:  #ff6666;
+    border: 1px solid #b30000;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nextbtn:hover,.prvbtn:hover{
+    color:red;
+    background: #cce5ff;
+    border-color: #b8daff;
+    }
+
